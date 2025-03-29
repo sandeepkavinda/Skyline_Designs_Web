@@ -1004,16 +1004,13 @@ section,
 
 @media (max-width: 768px) {
   .hero h2 {
-    font-size: 32px;
+    font-size: 22px;
   }
 
   .hero p {
-    font-size: 18px;
+    font-size: 12px;
   }
 
-  .hero label {
-    font-size: 14px;
-  }
 }
 
 /*--------------------------------------------------------------
