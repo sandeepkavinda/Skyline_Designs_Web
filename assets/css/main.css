@@ -1133,6 +1133,10 @@ section,
   margin-bottom: 0;
 }
 
+.details{
+  height: 200px;
+}
+
 .services .service-item:hover .details h3 {
   color: var(--accent-color);
 }
@@ -1530,6 +1534,10 @@ section,
   color: #fff;
   transition: 0.3s;
   line-height: 1.2;
+}
+
+.portfolio .portfolio-content .portfolio-info .preview-link{
+  left: calc(50% - 8px);
 }
 
 .portfolio .portfolio-content .portfolio-info .preview-link:hover,
