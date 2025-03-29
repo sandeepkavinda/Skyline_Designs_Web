@@ -23,8 +23,8 @@
   --default-color: #3c3c3c; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #273d4e; /* Color for headings, subheadings and title throughout the website */
   --accent-color: #034c53; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #cfcfcf; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #cfcfcf; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+  --surface-color: #0e0e0e; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
@@ -956,6 +956,12 @@ section,
   font-size: 24px;
 }
 
+.hero label {
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  margin: 10px 0 0 0;
+  font-size: 24px;
+}
+
 .hero .btn-get-started {
   background: var(--accent-color);
   color: var(--contrast-color);
@@ -1003,6 +1009,10 @@ section,
 
   .hero p {
     font-size: 18px;
+  }
+
+  .hero label {
+    font-size: 14px;
   }
 }
 
@@ -1650,7 +1660,7 @@ section,
   border-radius: 4px;
   transition: all 0.3s ease-in-out;
   border-radius: 50%;
-  border: 2px dotted color-mix(in srgb, var(--accent-color), transparent 40%);
+  border: 2px solid color-mix(in srgb, var(--accent-color), transparent 40%);
 }
 
 .contact .info-item h3 {
