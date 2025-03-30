@@ -41,7 +41,9 @@
 
 .light-background {
   --background-color: #111111;
-  --surface-color: #ffffff;
+  --surface-color: #0e0e0e;
+  --contrast-color: #ffffff;
+  --accent-color: #273d4e;
 }
 
 .dark-background {
@@ -1094,10 +1096,11 @@ section,
 
 .services .img img {
   transition: 0.6s;
+  opacity: 0.7;
 }
 
 .services .details {
-  background: color-mix(in srgb, var(--surface-color), transparent 5%);
+  background: color-mix(in srgb, var(--surface-color), transparent 2%);
   padding: 50px 30px;
   margin: -100px 30px 0 30px;
   transition: all ease-in-out 0.3s;
@@ -1112,8 +1115,8 @@ section,
   width: 72px;
   height: 72px;
   background: var(--accent-color);
-  color: var(--contrast-color);
-  border: 6px solid var(--contrast-color);
+  color: var(--surface-color);
+  border: 6px solid var(--surface-color);
   border-radius: 50px;
   display: flex;
   align-items: center;
