@@ -20,7 +20,7 @@
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
   --background-color: #090909; /* Background color for the entire website, including individual sections */
-  --default-color: #636363; /* Default color used for the majority of the text content across the entire website */
+  --default-color: #8a8a8a; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #034c53; /* Color for headings, subheadings and title throughout the website */
   --accent-color: #034c53; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #0e0e0e; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
@@ -1096,7 +1096,6 @@ section,
 
 .services .img img {
   transition: 0.6s;
-  opacity: 0.7;
 }
 
 .services .details {
@@ -1137,7 +1136,7 @@ section,
 }
 
 .services .details p {
-  color: color-mix(in srgb, var(--default-color), transparent 10%);
+  color: var(--default-color);
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
